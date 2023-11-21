@@ -1,38 +1,498 @@
-.App {
+body {
+  margin: 0;
+  font: 14px 'puppins', sans-serif;
+}
+
+.fluid-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  max-width: 1120px;
+}
+
+.col-4 {
+  box-sizing: border-box;
+  width: 33.33%;
+}
+
+.col-6 {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+.col-3 {
+  box-sizing: border-box;
+  width: 25%;
+}
+
+.col-8 {
+  box-sizing: border-box;
+  width: 66.6%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.bg-dark-gray {
+  background-color: #E3DBD3;
+}
+
+.bg-light-gray {
+  background-color: #F9F6F5;
+}
+
+/* Header */
+header {
+  padding: 10px 0;
+}
+
+header .logo {
+  padding-left: 40px;
+}
+
+.nav-bar ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.nav-bar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+}
+
+.nav-bar li:last-child a {
+  text-transform: none;
+}
+
+/* Main Hero Section */
+.main-hero {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  background-color: #DC9A75;
+  padding-bottom: 200px;
+}
+
+.main-hero h1 {
+  font: 60px 'Playfair Display';
+  font-weight: normal;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Intro section */
+.intro {
+  background-color: #F9F6F5;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.intro .img {
+  margin: -280px auto 0 auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.intro h2 {
+  width: 100%;
+  margin: auto;
+  font: 40px 'Playfair Display';
+  color: #272F3F;
+}
+
+.intro p {
+  width: 60%;
+  margin: 60px auto 60px auto;
+  margin-top: 30px;
+  font-size: 24px;
+  font-weight: lighter;
+  color: #272F3F;
+}
+
+/* Marketing Section */
+.marketing {
+  background-color: #F1ECE7;
+  padding-top: 100px;
+}
+
+.marketing h1 {
+  width: 100%;
+  font: 60px 'Playfair Display';
+  font-weight: lighter;
+  color: #272F3F;
+  text-align: center;
+}
+
+.marketing h2 {
+  width: 100%;
+  font: 60px 'Playfair Display';
+  font-weight: lighter;
+  color: #272F3F;
+  text-align: center;
+}
+
+.marketing h4 {
+  width: 100%;
+  font: 36px 'Playfair Display';
+  font-weight: normal;
+  color: #272F3F;
+  text-align: center;
+}
+
+.marketing p {
+  margin: auto;
+  width: 50%;
+  font-size: 20px;
+  font-weight: lighter;
+  color: #40485A;
+}
+
+.courriel {
+  width: 51%;
+  margin: 100px auto 60px auto;
+}
+
+.courriel label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.courriel input {
+  margin-top: 10px;
+  padding-left: 10px;
+  width: 350px;
+  height: 2em;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.courriel button {
+  background-color: #D29F72;
+  margin-left: 20px;
+  width: 150px;
+  height: 2em;
+  border: 2px solid #D29F72;
+  box-shadow: 1px 1px 1px inset white,
+              -1px -1px 1px inset white;
+  font-size: 14px;
+  font-weight: bold;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Description Section */
+.description .bg-dark-gray {
+  padding-top: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.description .bg-light-gray {
+  position: relative;
+  z-index: -1;
+}
+
+.description h2 {
+  margin: auto;
+  text-align: center;
+  font: 60px 'Playfair Display';
+  font-weight: normal;
+}
+
+.description .images {
+  margin-top: 60px;
+  margin-bottom: -275px;
+  gap: 20px;
+}
+
+.description .images .underline {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.description .images h3 {
+  font-size: 24px;
+}
+
+.description .images p {
+  margin-top: 100px;
+  font-size: 18px;
+  color: #40485A;
+}
+
+.description h4 {
+  margin: auto;
+  margin-top: 300px;
+  width: 100%;
+  font: 36px 'Playfair Display';
+  font-weight: normal;
+  color: #40485A;
+  text-align: center;
+}
+
+.description .bg-light-gray p {
+  width: 45%;
+  margin: 40px auto 60px auto;
+  font-size: 18px;
+  color: #40485A;
+  text-align: center;
+}
+
+/* Piscine Section */
+.piscine .bg-dark-gray {
+  padding-top: 200px;
+}
+
+.piscine .bg-light-gray {
+  position: relative;
+  z-index: -1;
+}
+
+.piscine h2 {
+  margin: auto;
+  text-align: center;
+  font: 60px 'Playfair Display';
+  font-weight: normal;
+}
+
+.piscine .images {
+  margin-top: 60px;
+  margin-bottom: -275px;
+  gap: 20px;
+}
+
+.piscine .images .underline {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.piscine .images h3 {
+  font-size: 24px;
+}
+
+.piscine .images p {
+  margin-top: 100px;
+  font-size: 18px;
+  color: #40485A;
+}
+
+.piscine h4 {
+  margin: auto;
+  margin-top: 300px;
+  width: 100%;
+  font: 36px 'Playfair Display';
+  font-weight: normal;
+  color: #40485A;
+  text-align: center;
+}
+
+.piscine .bg-light-gray p {
+  width: 45%;
+  margin: 40px auto 60px auto;
+  font-size: 18px;
+  color: #40485A;
+  text-align: center;
+}
+
+/* FAQ Section */
+.faq {
+  background-color: #E3DBD3;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.faq h2 {
+  width: 80%;
+  margin: auto;
+  font: 60px 'Playfair Display';
+  color: #272F3F;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.faq ul {
+  list-style: url('Rectangle.png');
+  width: 50%;
+  margin: auto;
+  margin-top: 80px;
+}
+
+.faq h5 {
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #272F3F;
+}
+
+.faq p {
+  font-size: 20px;
+  color: #272F3F;
+}
+
+/* Footer */
+footer {
+  background-color: #40485A;
+}
+
+footer h6 {
+  margin-bottom: 0;
+  font: 16px 'Playfair Display';
+  font-weight: normal;
+  color: white;
+}
+
+footer p {
+  margin-bottom: 40px;
+  font: 12px;
+  font-weight: bold;
+  color: white;
+}
+
+footer button {
+  margin  : auto;
+  margin-top: 100px;
+  display: block;
+  background-color: transparent;
+  width: 200px;
+  height: 2em;
+  font-size: 12px;
+  font-weight: bold;
+  border: 1px solid white;
+  border-radius: 0;
+  color: white;
+}
+
+/* Condos Page */
+
+/* Condos Section */
+.condos .bg-dark-gray {
+  padding-top: 150px;
+}
+
+.condos .bg-light-gray {
+  position: relative;
+  z-index: -1;
+  padding-top: 300px;
+}
+
+.condos h2 {
+  margin: auto;
+  text-align: center;
+  font: 60px 'Playfair Display';
+  font-weight: normal;
+}
+
+.condos .images {
+  margin-top: 60px;
+  margin-bottom: -275px;
+  gap: 20px;
+}
+
+.condos .underline {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.condos .images .underline h3 {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+
+.condos .images .title p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: black;
+  font-weight: lighter;
+}
+
+.condos .images h5 {
+  margin-top: 60px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.condos .images p {
+  margin-top: 60px;
+  font-size: 18px;
+  color: #40485A;
+}
+
+.line {
+  margin-left: 30px;
+}
+
+.condos h4 {
+  margin-top: -30px;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.condos .list {
+  width: 90%;
+  margin: 0 auto;
+  padding-bottom: 40px;
+  background-color: #F1ECE7;
+}
+
+.condos .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.condos ul {
+  list-style: none;
+}
+
+.condos .left h5 {
+  margin-top: 40px;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.condos .left p {
+  margin-top: 5px;
+  margin-left: 30px;
+}
+
+.condos .right .list:first-child {
+  padding-bottom: 20px;
+}
+
+.condos .right .list:first-child h5 {
+  margin: 10px 40px;
+}
+
+.condos .right ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.condos .right h5 {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.condos .right p {
+  margin-left: 30px;
+}
+
+.condos button {
+  background-color: #D29F72;
+  display: block;
+  margin: 40px auto;
+  padding: .5em 2em;
+  border: 2px solid #D29F72;
+  box-shadow: 1px 1px 1px inset white,
+              -1px -1px 1px inset white;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
 }
