@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/real-estate-luxury-template/static/css/main.81cc2a2f.css",
+    "main.js": "/real-estate-luxury-template/static/js/main.bc95beeb.js",
+    "index.html": "/real-estate-luxury-template/index.html",
+    "main.81cc2a2f.css.map": "/real-estate-luxury-template/static/css/main.81cc2a2f.css.map",
+    "main.bc95beeb.js.map": "/real-estate-luxury-template/static/js/main.bc95beeb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.81cc2a2f.css",
+    "static/js/main.bc95beeb.js"
+  ]
+}
